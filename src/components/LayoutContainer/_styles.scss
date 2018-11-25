@@ -1,0 +1,5 @@
+.layout-container {
+  margin-top: $navbarHeight;
+  min-height: calc(100vh - #{$navbarHeight});
+  width: 100%;
+}
