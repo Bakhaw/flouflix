@@ -5,7 +5,7 @@ import BrandLogo from '../../assets/images/flouflix_logo.png';
 function Brand() {
   return (
     <Link to='/'>
-      <img alt='Flouflix Logo' className='navbar__brand' src={BrandLogo} />
+      <img alt='Flouflix Logo' className='Navbar__brand' src={BrandLogo} />
     </Link>
   );
 }

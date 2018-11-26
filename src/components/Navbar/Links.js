@@ -26,10 +26,10 @@ const links = [
 
 function Links() {
   return (
-    <ul className='navbar__links__container'>
+    <ul className='Navbar__links__container'>
       {links.map((item, index) => (
         <li key={index}>
-          <Link className='navbar__link' to={item.routeTo}>
+          <Link className='Navbar__link' to={item.routeTo}>
             {item.text}
           </Link>
         </li>

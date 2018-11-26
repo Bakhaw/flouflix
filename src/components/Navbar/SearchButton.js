@@ -13,25 +13,16 @@ function SearchButton() {
     setShowInput(!showInput);
   }
 
-  if (!showInput)
-    return (
-      <SearchIcon
-        className='navbar__search-input__icon'
-        onClick={toggleInput}
-      />
-    );
+  if (!showInput) return <SearchIcon className='Navbar__search-input__icon' onClick={toggleInput} />;
 
   return (
-    <FormControl className='navbar__search-input__container'>
+    <FormControl className='Navbar__search-input__container'>
       <Input
-        className='navbar__search-input'
+        className='Navbar__search-input'
         disableUnderline
         startAdornment={
           <InputAdornment position='start'>
-            <SearchIcon
-              className='navbar__search-input__icon'
-              onClick={toggleInput}
-            />
+            <SearchIcon className='Navbar__search-input__icon' onClick={toggleInput} />
           </InputAdornment>
         }
       />

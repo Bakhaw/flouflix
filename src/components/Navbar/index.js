@@ -9,13 +9,13 @@ import SearchButton from './SearchButton';
 
 function Navbar() {
   return (
-    <div className='navbar'>
-      <div className='navbar__left-items'>
+    <div className='Navbar'>
+      <div className='Navbar__left-items'>
         <Brand />
         <Links />
       </div>
 
-      <div className='navbar__right-items'>
+      <div className='Navbar__right-items'>
         <SearchButton />
         <KidsButton />
         <NotificationsButton />

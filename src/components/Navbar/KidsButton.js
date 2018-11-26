@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Kids() {
   return (
-    <Link className='navbar__kids__button' to='/kids'>
+    <Link className='Navbar__kids__button' to='/kids'>
       JEUNESSE
     </Link>
   );
