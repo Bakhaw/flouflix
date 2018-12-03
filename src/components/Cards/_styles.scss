@@ -5,7 +5,7 @@
   grid-gap: 15px;
   padding: 30px 0;
   .Card {
-    height: $cardHeight;
+    min-height: $cardHeight;
     width: $cardWidth;
     cursor: pointer;
     .Card__poster {
@@ -13,6 +13,10 @@
       width: 100%;
       max-height: $cardHeight;
       height: 100%;
+    }
+    .Card__title {
+      color: $white;
+      text-align: center;
     }
   }
 }
