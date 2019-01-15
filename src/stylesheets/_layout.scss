@@ -1,3 +1,9 @@
 $navbarHeight: 70px;
 $cardHeight: 400px;
 $cardWidth: 250px;
+
+.disabled {
+  filter: opacity(25%);
+  cursor: not-allowed;
+  pointer-events: none;
+}

@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import AccountCircle from '@material-ui/icons/AccountCircle';
+import React, { useState } from "react";
+import AccountCircle from "@material-ui/icons/AccountCircle";
 
-import FormControl from '@material-ui/core/FormControl';
-import Input from '@material-ui/core/Input';
-import InputAdornment from '@material-ui/core/InputAdornment';
-import SearchIcon from '@material-ui/icons/Search';
+import FormControl from "@material-ui/core/FormControl";
+import Input from "@material-ui/core/Input";
+import InputAdornment from "@material-ui/core/InputAdornment";
+import SearchIcon from "@material-ui/icons/Search";
 
 function SearchButton() {
   const [showInput, setShowInput] = useState(false);
@@ -13,16 +13,25 @@ function SearchButton() {
     setShowInput(!showInput);
   }
 
-  if (!showInput) return <SearchIcon className='Navbar__search-input__icon' onClick={toggleInput} />;
+  if (!showInput)
+    return (
+      <SearchIcon
+        className="Navbar__search-input__icon"
+        onClick={toggleInput}
+      />
+    );
 
   return (
-    <FormControl className='Navbar__search-input__container'>
+    <FormControl className="Navbar__search-input__container">
       <Input
-        className='Navbar__search-input'
+        className="Navbar__search-input"
         disableUnderline
         startAdornment={
-          <InputAdornment position='start'>
-            <SearchIcon className='Navbar__search-input__icon' onClick={toggleInput} />
+          <InputAdornment position="start">
+            <SearchIcon
+              className="Navbar__search-input__icon"
+              onClick={toggleInput}
+            />
           </InputAdornment>
         }
       />
